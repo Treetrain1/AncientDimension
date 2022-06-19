@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "net.frozenblock",
+    "id": "ancientdimension",
+    "version": "${version}",
+    "metadata": {
+      "name": "Ancient Dimension",
+      "description": "This mod adds a dimension to the Ancient City structure.",
+      "authors": [
+        "Me!"
+      ],
+      "license": "GPL-3.0"
+    },
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "icon": "assets/ancientdimension/icon.png",
+    "environment": "*",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "load_type": "always",
+    "entrypoints": {
+      "init": [
+        "net.frozenblock.ancientdimension.AncientDimension"
+      ],
+      "events": [
+        "net.frozenblock.ancientdimension.AncientDimension"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "versions": ">=0.17.1-beta.3"
+      },
+      "quilted_fabric_api",
+      {
+        "id": "minecraft",
+        "versions": "~1.19"
+      }
+    ]
+  }
+}
